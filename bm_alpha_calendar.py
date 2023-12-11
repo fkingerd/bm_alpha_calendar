@@ -38,3 +38,7 @@ if category == "Minting soon" and "Date" in filtered_df.columns:
 # Display data for the selected category
 st.subheader(f"{category} Category")
 st.write(filtered_df.to_html(escape=False, index=False), unsafe_allow_html=True)
+
+st.write('\n')
+bm_discord_invite_link = lambda x: f'<a href="https://discord.gg/EqcHvkgBdg" target="_blank">Join Black Mage Discord</a>'
+st.markdown(bm_discord_invite_link(None), unsafe_allow_html=True)
